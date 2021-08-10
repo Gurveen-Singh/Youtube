@@ -23,11 +23,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={{ padding: "10px 10px" }}>
+      <div style={{ padding: "10px 10px", backgroundColor: "#000" }}>
         <SearchBar onFormSubmit={this.onSearchSubmit.bind(this)} />
         <div className="ui grid">
           <div className=" ui row">
-            <div className="eleven wide c olumn">
+            <div className="eleven wide column">
               <VideoDetail video={this.state.selectedVideo} />
             </div>
             <div className="five wide column">
